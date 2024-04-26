@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">readkami beta</string>
+
+
+
+    <string-array name="book_title">
+        <item>Um Digos Research Journal</item>
+        <item>Gomanan</item>
+        <item>The Pendulum</item>
+        <item>La Ricerca</item>
+        <item>Tinubhan</item>
+    </string-array>
+
+    <string-array name="book_subtitle">
+        <item>About the Journal</item>
+        <item>About the Journal</item>
+        <item>About the Journal</item>
+        <item>About the Journal</item>
+        <item>About the Journal</item>
+    </string-array>
+
+    <string-array name="book_description">
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+    </string-array>
+</resources>
