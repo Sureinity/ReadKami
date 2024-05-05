@@ -1,7 +1,21 @@
 <resources>
     <string name="app_name">readkami beta</string>
+    <string name="Journal1">The Journal of Economic and Enterprise Studies (JEES) is dedicated to establishing a vibrant exchange platform for scholars, researchers, and practitioners engaged in the fields of economics and enterprise, particularly within the Southeast Asian context with a special emphasis on the Philippines. Our primary objective is to foster a dynamic, mutually beneficial dialogue between contributors and the wider community of academics, policymakers, and industry professionals who benefit from this research.
 
+--Core Focus--
 
+JEES is committed to disseminating cutting-edge research findings and advancing scientific knowledge in the realms of economics and enterprise. Our focus encompasses a range of critical areas:
+
+1. Economic Development and Policy: Delving into the strategies, outcomes, and implications of economic policies in Southeast Asia, with an emphasis on sustainable and inclusive growth.
+2. Entrepreneurship and Innovation: Exploring the vibrant world of startups, innovation strategies, and their impact on regional economies.
+3. International Trade and Finance: Analyzing the complexities of global trade, financial markets, and economic integration from a Southeast Asian perspective.
+4. Sustainable Business and Corporate Responsibility: Investigating the intersection of business practices with environmental sustainability and social responsibility.
+5. Agricultural Economics: Examining the sector\'s influence on regional economies, rural development, and policy-making.
+6. Behavioral Economics and Consumer Behavior: Unraveling the psychological aspects of economic decision-making in the digital era.
+7. Human Resource Management and Organizational Behavior: Studying the strategies for workforce development and organizational effectiveness in diverse cultural settings.
+8. Public Sector Economics and Policy Analysis: Assessing the impact of governmental actions in economic contexts.
+9. Urban and Regional Economics: Focusing on urbanization, regional development, and spatial economic dynamics.
+10. Financial Technology and Digital Economy: Investigating the transformative role of digital innovations in economics and business.</string>
 
     <string-array name="book_title">
         <item>Um Digos Research Journal</item>
@@ -17,13 +31,5 @@
         <item>About the Journal</item>
         <item>About the Journal</item>
         <item>About the Journal</item>
-    </string-array>
-
-    <string-array name="book_description">
-        <item>lorem ipsum</item>
-        <item>lorem ipsum</item>
-        <item>lorem ipsum</item>
-        <item>lorem ipsum</item>
-        <item>lorem ipsum</item>
     </string-array>
 </resources>

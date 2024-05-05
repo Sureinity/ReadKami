@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Readkami_beta"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.Journals_to_Articles.Journal_of_Economy_and_Enterprise"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -7,14 +7,6 @@
         android:tooltipText="Journal"
         android:title="" />
     <item
-        android:id="@+id/bookmark"
-        android:icon="@drawable/bookmark_vector"
-        android:title="" />
-    <item
-        android:id="@+id/history"
-        android:icon="@drawable/history_vector"
-        android:title="" />
-    <item
         android:id="@+id/download"
         android:icon="@drawable/download_vector"
         android:title="" />
