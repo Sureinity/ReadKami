@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.example.readkami_beta.Fragments.BookmarkFragment;
 import com.example.readkami_beta.Fragments.DownloadFragment;
@@ -48,3 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
+//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                     WindowManager.LayoutParams.FLAG_FULLSCREEN);

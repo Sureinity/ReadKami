@@ -3,18 +3,19 @@ package com.example.readkami_beta.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.readkami_beta.Model.journal1_model;
 import com.example.readkami_beta.R;
-
 import java.util.List;
 
 public class journal1_adapter extends RecyclerView.Adapter<journal1_adapter.ArticleViewHolder> {
     private List<journal1_model> articleList;
     private OnItemClickListener onItemClickListener;
+    private OnDownloadClickListener onDownloadClickListener;
 
     public journal1_adapter(List<journal1_model> articleList) {
         this.articleList = articleList;
@@ -25,9 +26,19 @@ public class journal1_adapter extends RecyclerView.Adapter<journal1_adapter.Arti
         this.onItemClickListener = listener;
     }
 
+    // Setter for download click listener
+    public void setOnDownloadClickListener(OnDownloadClickListener listener) {
+        this.onDownloadClickListener = listener;
+    }
+
     // Interface for item click listener
     public interface OnItemClickListener {
         void onItemClick(int position);
+    }
+
+    // Interface for download click listener
+    public interface OnDownloadClickListener {
+        void onDownloadClick(int position);
     }
 
     @NonNull
@@ -54,8 +65,17 @@ public class journal1_adapter extends RecyclerView.Adapter<journal1_adapter.Arti
                 }
             }
         });
-    }
 
+        // Set click listener for the download icon
+        holder.downloadIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onDownloadClickListener != null) {
+                    onDownloadClickListener.onDownloadClick(currentPosition);
+                }
+            }
+        });
+    }
 
     @Override
     public int getItemCount() {
@@ -65,11 +85,13 @@ public class journal1_adapter extends RecyclerView.Adapter<journal1_adapter.Arti
     public static class ArticleViewHolder extends RecyclerView.ViewHolder {
         TextView textViewTitle;
         TextView textViewAuthors;
+        ImageView downloadIcon;
 
         public ArticleViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textViewAuthors = itemView.findViewById(R.id.textViewAuthors);
+            downloadIcon = itemView.findViewById(R.id.downloadIcon);
         }
     }
 }
