@@ -103,11 +103,11 @@ public class Journal_of_Economy_and_Enterprise extends AppCompatActivity {
         // Create a reference to the PDF file in Firebase Storage
         StorageReference pdfRef = storageRef.child(pdfFileName);
 
-        // Get the app-specific directory within external storage
-        File externalFilesDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
+        // Get the "Downloads" directory
+        File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
 
-        // Create a local file to store the downloaded PDF in the app-specific directory
-        File localFile = new File(externalFilesDir, pdfFileName);
+        // Create a local file to store the downloaded PDF in the "Downloads" directory
+        File localFile = new File(downloadsDir, pdfFileName);
 
         // Download the PDF file to the local file
         pdfRef.getFile(localFile)
@@ -120,6 +120,4 @@ public class Journal_of_Economy_and_Enterprise extends AppCompatActivity {
                     Toast.makeText(this, "Failed to download PDF file", Toast.LENGTH_SHORT).show();
                 });
     }
-
-
 }
