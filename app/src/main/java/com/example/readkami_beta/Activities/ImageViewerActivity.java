@@ -1,6 +1,5 @@
 package com.example.readkami_beta.Activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -27,7 +26,7 @@ public class ImageViewerActivity extends AppCompatActivity {
         // Retrieve folder name from intent
         String folderName = getIntent().getStringExtra("folderName");
 
-        // Initialize WebView
+        // Start WebView
         webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
@@ -36,12 +35,12 @@ public class ImageViewerActivity extends AppCompatActivity {
         loadImagesFromStorage(folderName);
     }
 
-    // Define a method to load images from Firebase Storage into WebView
+    // Define method to load images from Firebase Storage into WebView
     private void loadImagesFromStorage(String folderName) {
         // Construct the reference to the folder containing images
         StorageReference imagesRef = storageRef.child(folderName);
 
-        // Load the HTML content to display images in WebView
+        // Load HTML content to display images in WebView
         imagesRef.listAll().addOnSuccessListener(listResult -> {
             StringBuilder htmlContent = new StringBuilder("<html><body>");
             for (StorageReference item : listResult.getItems()) {

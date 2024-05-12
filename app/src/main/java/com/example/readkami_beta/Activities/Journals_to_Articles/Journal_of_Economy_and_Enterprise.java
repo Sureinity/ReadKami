@@ -30,7 +30,7 @@ import java.util.List;
 public class Journal_of_Economy_and_Enterprise extends AppCompatActivity {
 
     private TextView descriptionTextView;
-    private ImageView expandCollapseButton;
+    private ImageView expandCollapseButton; //For expand-collapse button
     private RecyclerView recyclerView;
     private journal1_adapter adapter;
     private List<journal1_model> articleList;
@@ -100,14 +100,31 @@ public class Journal_of_Economy_and_Enterprise extends AppCompatActivity {
             return;
         }
 
-        // Create a reference to the PDF file in Firebase Storage
-        StorageReference pdfRef = storageRef.child(pdfFileName);
-
         // Get the "Downloads" directory
         File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
 
-        // Create a local file to store the downloaded PDF in the "Downloads" directory
-        File localFile = new File(downloadsDir, pdfFileName);
+        // Create a folder for your app if it doesn't exist
+        File appFolder = new File(downloadsDir, "ReadKami");
+        if (!appFolder.exists()) {
+            if (!appFolder.mkdirs()) {
+                // Failed to create directory
+                Toast.makeText(this, "Failed to create app directory", Toast.LENGTH_SHORT).show();
+                return;
+            }
+        }
+
+        // Create a local file to store the downloaded PDF in the app folder
+        File localFile = new File(appFolder, pdfFileName);
+
+        // Check if the file already exists
+        if (localFile.exists()) {
+            // File already downloaded
+            Toast.makeText(this, "File is already downloaded", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Create a reference to the PDF file in Firebase Storage
+        StorageReference pdfRef = storageRef.child(pdfFileName);
 
         // Download the PDF file to the local file
         pdfRef.getFile(localFile)
@@ -120,4 +137,6 @@ public class Journal_of_Economy_and_Enterprise extends AppCompatActivity {
                     Toast.makeText(this, "Failed to download PDF file", Toast.LENGTH_SHORT).show();
                 });
     }
+
+
 }
