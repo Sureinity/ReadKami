@@ -77,7 +77,13 @@ public class JournalFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+        journal2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.UM_Digos_Research_Journal.class);
+                startActivity(intent);
+            }
+        });
 
 
         return view;
