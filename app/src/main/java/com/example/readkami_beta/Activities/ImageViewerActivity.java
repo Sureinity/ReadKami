@@ -1,6 +1,7 @@
 package com.example.readkami_beta.Activities;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -19,7 +20,10 @@ public class ImageViewerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_image_viewer);
+
 
         // Retrieve parentFolderName and folderName from intent
         String parentFolderName = getIntent().getStringExtra("parentFolderName");

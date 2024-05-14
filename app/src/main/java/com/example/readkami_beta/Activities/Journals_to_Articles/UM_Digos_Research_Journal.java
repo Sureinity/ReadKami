@@ -60,9 +60,7 @@ public class UM_Digos_Research_Journal extends AppCompatActivity {
 
         articleList = new ArrayList<>();
         articleList.add(new journal1_model("An analysis of Paul Grice’s Maxims cooperative principle in sari-sari store conversation", "Khareen Culajara, Wendy Rose Laguerta","An_Analysis_of_Paul_Grice_Maxim", "An_Analysis_of_Paul_Grice_Maxim.pdf", "UM Digos Research Journal"));
-        articleList.add(new journal1_model("Depiction of domestic violence in Nicholas Sparks' \"Safe Haven\": A feminist approach", "Khareen Culajara, Arly Khryss Joyce Obeso","\t\n" +
-                "Depiction_of_Domestic_Violence", "\t\n" +
-                "Depiction_of_Domestic_Violence.pdf", "UM Digos Research Journal"));
+        articleList.add(new journal1_model("Depiction of domestic violence in Nicholas Sparks' \"Safe Haven\": A feminist approach", "Khareen Culajara, Arly Khryss Joyce Obeso","Depiction_of_Domestic_Violence", "Depiction_of_Domestic_Violence.pdf", "UM Digos Research Journal"));
         articleList.add(new journal1_model("Light and shades: Political life of Vice Mayor Reynaldo S. Hermosisima", "Garnette Mae Balacy, Johanna Faith Botohan", "Light_and_Shades", "Light_and_Shades.pdf", "UM Digos Research Journal"));
         articleList.add(new journal1_model("Revenue collections and government expenditures of Barangay Zone II, Digos City", "Melody Malnegro, Shelyte Escabosa, Elda Joy Quirante, Aubrey Salarza, Rosemarie Sanchez",
                 "Revenue_Collections", "Revenue_Collections.pdf", "UM Digos Research Journal"));
