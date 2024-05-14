@@ -68,6 +68,9 @@ public class JournalFragment extends Fragment {
         CardView journal1 = (CardView) view.findViewById(R.id.journal1);
         CardView journal2 = (CardView) view.findViewById(R.id.journal2);
         CardView journal3 = (CardView) view.findViewById(R.id.journal3);
+        CardView journal4 = (CardView) view.findViewById(R.id.journal4);
+        CardView journal5 = (CardView) view.findViewById(R.id.journal5);
+        CardView journal6 = (CardView) view.findViewById(R.id.journal6);
 
         //Clicking card view
         journal1.setOnClickListener(new View.OnClickListener() {
@@ -91,10 +94,28 @@ public class JournalFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+        journal4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.The_Pendulum.class);
+                startActivity(intent);
+            }
+        });
+        journal5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.La_Ricerca.class);
+                startActivity(intent);
+            }
+        });
+        journal6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.Tinubdan.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
-
-
     }
 }
