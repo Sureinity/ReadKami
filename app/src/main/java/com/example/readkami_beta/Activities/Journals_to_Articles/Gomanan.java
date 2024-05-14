@@ -23,7 +23,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UM_Digos_Research_Journal extends AppCompatActivity {
+public class Gomanan extends AppCompatActivity {
 
     private TextView descriptionTextView;
     private ImageView expandCollapseButton;
@@ -35,9 +35,9 @@ public class UM_Digos_Research_Journal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_journal_2nd);
+        setContentView(R.layout.activity_journal_1st);
 
-        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/UM Digos Research Journal");
+        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/Gomanan");
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,21 +59,17 @@ public class UM_Digos_Research_Journal extends AppCompatActivity {
         });
 
         articleList = new ArrayList<>();
-        articleList.add(new journal1_model("An analysis of Paul Grice’s Maxims cooperative principle in sari-sari store conversation", "Khareen Culajara, Wendy Rose Laguerta","An_Analysis_of_Paul_Grice_Maxim", "An_Analysis_of_Paul_Grice_Maxim.pdf", "UM Digos Research Journal"));
-        articleList.add(new journal1_model("Depiction of domestic violence in Nicholas Sparks' \"Safe Haven\": A feminist approach", "Khareen Culajara, Arly Khryss Joyce Obeso","\t\n" +
-                "Depiction_of_Domestic_Violence", "\t\n" +
-                "Depiction_of_Domestic_Violence.pdf", "UM Digos Research Journal"));
-        articleList.add(new journal1_model("Light and shades: Political life of Vice Mayor Reynaldo S. Hermosisima", "Garnette Mae Balacy, Johanna Faith Botohan", "Light_and_Shades", "Light_and_Shades.pdf", "UM Digos Research Journal"));
-        articleList.add(new journal1_model("Revenue collections and government expenditures of Barangay Zone II, Digos City", "Melody Malnegro, Shelyte Escabosa, Elda Joy Quirante, Aubrey Salarza, Rosemarie Sanchez",
-                "Revenue_Collections", "Revenue_Collections.pdf", "UM Digos Research Journal"));
-        articleList.add(new journal1_model("Transformational leadership and quality of work-life of faculty members of UM Digos College", "Leah Magdamo, Mary Grace Dolendo, Christine Anne Padilla, Riche James Abelleja",
-                "Transformational_Leadership", "Transformational_Leadership.pdf", "UM Digos Research Journal"));
+        articleList.add(new journal1_model("Narratives of Domestic Violence against Women: A Multiple Case Study", "Mary Grace Aclon, Jayver Padulip, Ronald Taparan, Erick Baloran, Jenny Hernan, Erick Pajaron", "Narrative_of_Domestic", "Narrative_of_Domestic.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Tales of Homosexual Daughters: Insights and Lessons", "Jojie Bryan Gomintong, Angelica Patlunag, Marc Rowil Valdez, Erick Baloran, Jenny Hernan, Eric Pajaron", "Tales_of_Homosexual_Daughters", "Tales_of_Homosexual_Daughters.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Travails of Direct Sellers in Davao del Sur: A Phenomenological Inquiry", "Quiny Christine Deparine, Anna May Canoy, Joanna Rañoa, Erick Baloran, Jenny Hernan, Eric Pajaron", "Travails_of_Direct_Sellers", "Travails_of_Direct_Sellers.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Social Responsibility Practices and Customer Satisfaction among Cooperatives in Davao del Sur", "Cherry Jay Donque, May Anne Orbita, April Kaye Diez, Eric Paul Susada, Erick Baloran, Jenny Hernan, Eric Pajaron", "Social_Responsibility_Practices", "Social_Responsibility_Practices.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Narratives of Domestic Violence against Women: A Multiple Case Study", "Mary Grace Aclon, Jayver Padulip, Ronald Taparan, Erick Baloran, Jenny Hernan, Erick Pajaron", "Narrative_of_Domestic", "Narrative_of_Domestic.pdf", "Gomanan"));
 
         adapter = new journal1_adapter(articleList);
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(position -> {
-            Intent intent = new Intent(UM_Digos_Research_Journal.this, ImageViewerActivity.class);
+            Intent intent = new Intent(Gomanan.this, ImageViewerActivity.class);
             intent.putExtra("parentFolderName", articleList.get(position).getParentFolderName());
             intent.putExtra("folderName", articleList.get(position).getFolderName());
             startActivity(intent);
