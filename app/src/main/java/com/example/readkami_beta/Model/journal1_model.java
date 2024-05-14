@@ -3,14 +3,16 @@ package com.example.readkami_beta.Model;
 public class journal1_model {
     private String title;
     private String authors;
-    private String folderName; // Add folderName field
-    private String pdfFileName; // Add pdfFileName field
+    private String folderName;
+    private String pdfFileName;
+    private String parentFolderName; // Add parentFolderName field
 
-    public journal1_model(String title, String authors, String folderName, String pdfFileName) {
+    public journal1_model(String title, String authors, String folderName, String pdfFileName, String parentFolderName) {
         this.title = title;
         this.authors = authors;
-        this.folderName = folderName; // Initialize folderName
-        this.pdfFileName = pdfFileName; // Initialize pdfFileName
+        this.folderName = folderName;
+        this.pdfFileName = pdfFileName;
+        this.parentFolderName = parentFolderName; // Initialize parentFolderName
     }
 
     public String getTitle() {
@@ -22,10 +24,14 @@ public class journal1_model {
     }
 
     public String getFolderName() {
-        return folderName; // Getter method for folderName
+        return folderName;
     }
 
     public String getPdfFileName() {
-        return pdfFileName; // Getter method for pdfFileName
+        return pdfFileName;
+    }
+
+    public String getParentFolderName() {
+        return parentFolderName; // Getter method for parentFolderName
     }
 }

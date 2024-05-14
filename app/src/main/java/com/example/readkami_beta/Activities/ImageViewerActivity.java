@@ -21,10 +21,12 @@ public class ImageViewerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_viewer);
 
-        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/Journal of Economy and Enterprise");
-
-        // Retrieve folder name from intent
+        // Retrieve parentFolderName and folderName from intent
+        String parentFolderName = getIntent().getStringExtra("parentFolderName");
         String folderName = getIntent().getStringExtra("folderName");
+
+        // Create the StorageReference
+        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/" + parentFolderName + "/" + folderName);
 
         // Start WebView
         webView = findViewById(R.id.webView);
@@ -32,22 +34,15 @@ public class ImageViewerActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
         // Load images into WebView
-        loadImagesFromStorage(folderName);
+        loadImagesFromStorage();
     }
 
-    // Define method to load images from Firebase Storage into WebView
-    private void loadImagesFromStorage(String folderName) {
-        // Construct the reference to the folder containing images
-        StorageReference imagesRef = storageRef.child(folderName);
-
-        // Load HTML content to display images in WebView
-        imagesRef.listAll().addOnSuccessListener(listResult -> {
+    private void loadImagesFromStorage() {
+        storageRef.listAll().addOnSuccessListener(listResult -> {
             StringBuilder htmlContent = new StringBuilder("<html><body>");
             for (StorageReference item : listResult.getItems()) {
                 item.getDownloadUrl().addOnSuccessListener(uri -> {
-                    // Append image tags to the HTML content
                     htmlContent.append("<img src='").append(uri.toString()).append("' style='width:100%; height:auto;'/>");
-                    // Load the HTML content into WebView
                     webView.loadDataWithBaseURL(null, htmlContent.toString(), "text/html", "utf-8", null);
                 });
             }
