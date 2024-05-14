@@ -20,29 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Initially load the JournalFragment
         repFragment(new JournalFragment());
-
-
-        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            if (item.getItemId() == R.id.journal) {
-                repFragment(new JournalFragment());
-            }
-
-            return true;
-        });
     }
-
-
-
 
     private void repFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout,fragment);
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
-
     }
 }
-
-//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
