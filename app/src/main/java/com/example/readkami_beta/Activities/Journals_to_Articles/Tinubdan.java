@@ -23,7 +23,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Gomanan extends AppCompatActivity {
+public class Tinubdan extends AppCompatActivity {
 
     private TextView descriptionTextView;
     private ImageView expandCollapseButton;
@@ -35,9 +35,9 @@ public class Gomanan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_journal_3rd);
+        setContentView(R.layout.activity_journal_6th);
 
-        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/Gomanan");
+        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/Tinubdan");
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,17 +59,17 @@ public class Gomanan extends AppCompatActivity {
         });
 
         articleList = new ArrayList<>();
-        articleList.add(new journal1_model("Narratives of Domestic Violence against Women: A Multiple Case Study", "Mary Grace Aclon, Jayver Padulip, Ronald Taparan, Erick Baloran, Jenny Hernan, Erick Pajaron", "Narrative_of_Domestic", "Narrative_of_Domestic.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Tales of Homosexual Daughters: Insights and Lessons", "Jojie Bryan Gomintong, Angelica Patlunag, Marc Rowil Valdez, Erick Baloran, Jenny Hernan, Eric Pajaron", "Tales_of_Homosexual_Daughters", "Tales_of_Homosexual_Daughters.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Travails of Direct Sellers in Davao del Sur: A Phenomenological Inquiry", "Quiny Christine Deparine, Anna May Canoy, Joanna Rañoa, Erick Baloran, Jenny Hernan, Eric Pajaron", "Travails_of_Direct_Sellers", "Travails_of_Direct_Sellers.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Social Responsibility Practices and Customer Satisfaction among Cooperatives in Davao del Sur", "Cherry Jay Donque, May Anne Orbita, April Kaye Diez, Eric Paul Susada, Erick Baloran, Jenny Hernan, Eric Pajaron", "Social_Responsibility_Practices", "Social_Responsibility_Practices.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Performance of the Local Government Units as a function of Internal Control Implementation", "Erika Garces, Elmer John Castro, Roldan Calisay, Erick Baloran, Jenny Hernan, Eric Pajaron", "Performance_of_the_Local_Government", "Performance_of_the_Local_Government.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Awareness and Practices on Solid Waste Management Among Grade 6 Pupils", "Nil Christopher Anania, Ma. Desiree Laurito, Gemma Biol, Ceazane Lou Quimpan", "Awareness_and_Practices_on_Solid_Waste_Management", "Awareness_and_Practices_on_Solid_Waste_Management.pdf", "Tinubdan"));
+        articleList.add(new journal1_model("Photovoice Analysis on Environmental Issues through the Lens of BSED English Students", "Patricia Nadine L. Chico, Joyce Hernando", "Photovoice_Analysis", "Photovoice_Analysis.pdf", "Tinubdan"));
+        articleList.add(new journal1_model("Epekto ng Kakayahan sa Pagtuturo sa Kaganyakan ng mga Mag-aaral sa Pag-aaral ng Asignaturang Filipino Dulot ng Pandemya", "Joyce Hernando, Glea Fe Cabudbud, Ryan Mangente, Jeala Perez", "Epekto_ng_Kakayahan", "Epekto_ng_Kakayahan.pdf", "Tinubdan"));
+        articleList.add(new journal1_model("Initiatives to COVID-19 Cases: A Trend Analysis", "Liezel V. Chan, Leejane P. Cogollodo, Rhoebegen P. Burgos", "Initiatives_to_COVID-19", "Initiatives_to_COVID-19.pdf", "Tinubdan"));
+        articleList.add(new journal1_model("Green Marketing and Consumer Behavior among Selected Fastfood Chain in Davao City", "Amelie L. Chico, Gerald Khein D. Nollora, Denmark B. Oxien, Karen Jane M. Yanoyan", "Green_Marketing_and_Consumer", "Green_Marketing_and_Consumer.pdf", "Tinubdan"));
 
         adapter = new journal1_adapter(articleList);
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(position -> {
-            Intent intent = new Intent(Gomanan.this, ImageViewerActivity.class);
+            Intent intent = new Intent(Tinubdan.this, ImageViewerActivity.class);
             intent.putExtra("parentFolderName", articleList.get(position).getParentFolderName());
             intent.putExtra("folderName", articleList.get(position).getFolderName());
             startActivity(intent);

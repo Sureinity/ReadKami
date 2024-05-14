@@ -23,7 +23,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Gomanan extends AppCompatActivity {
+public class The_Pendulum extends AppCompatActivity {
 
     private TextView descriptionTextView;
     private ImageView expandCollapseButton;
@@ -35,9 +35,9 @@ public class Gomanan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_journal_3rd);
+        setContentView(R.layout.activity_journal_4th);
 
-        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/Gomanan");
+        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/The Pendulum");
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,17 +59,17 @@ public class Gomanan extends AppCompatActivity {
         });
 
         articleList = new ArrayList<>();
-        articleList.add(new journal1_model("Narratives of Domestic Violence against Women: A Multiple Case Study", "Mary Grace Aclon, Jayver Padulip, Ronald Taparan, Erick Baloran, Jenny Hernan, Erick Pajaron", "Narrative_of_Domestic", "Narrative_of_Domestic.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Tales of Homosexual Daughters: Insights and Lessons", "Jojie Bryan Gomintong, Angelica Patlunag, Marc Rowil Valdez, Erick Baloran, Jenny Hernan, Eric Pajaron", "Tales_of_Homosexual_Daughters", "Tales_of_Homosexual_Daughters.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Travails of Direct Sellers in Davao del Sur: A Phenomenological Inquiry", "Quiny Christine Deparine, Anna May Canoy, Joanna Rañoa, Erick Baloran, Jenny Hernan, Eric Pajaron", "Travails_of_Direct_Sellers", "Travails_of_Direct_Sellers.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Social Responsibility Practices and Customer Satisfaction among Cooperatives in Davao del Sur", "Cherry Jay Donque, May Anne Orbita, April Kaye Diez, Eric Paul Susada, Erick Baloran, Jenny Hernan, Eric Pajaron", "Social_Responsibility_Practices", "Social_Responsibility_Practices.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Performance of the Local Government Units as a function of Internal Control Implementation", "Erika Garces, Elmer John Castro, Roldan Calisay, Erick Baloran, Jenny Hernan, Eric Pajaron", "Performance_of_the_Local_Government", "Performance_of_the_Local_Government.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Three Green Wheels of Life: The Venture of Tricycle Drivers in Tagum City and their Financial Burden During Covid-19 Pandemic", "Jessa Mae Baraquia, Tiffani Rose Batiao, Jovit Cain", "Three_Green_Wheel", "Three_Green_Wheel.pdf", "The Pendulum"));
+        articleList.add(new journal1_model("Influence of Facebook Live Selling on Purchase Intention among Online Shoppers", "Jane Rose Egot, Edsel Jay Perez, Elira Ji Villegas, Maria Teresa Ozoa", "Influence_of_Facebook_Live_Selling", ".pdf", "The Pendulum"));
+        articleList.add(new journal1_model("‘P**** I**’: A Pragmatic Analysis On President Rodrigo Duterte’s First and Last State of the Nation Addresses (SONAS 2016 - 2021)", "Arvin James Lója Lupas, Earl Jones Muico", "Pragmatic_Analysis_On_President_Rodrigo_Duterte", "Pragmatic_Analysis_On_President_Rodrigo_Duterte.pdf", "The Pendulum"));
+        articleList.add(new journal1_model("Investigating Social Loafing among Student-Researchers: A Mixed-Methods Inquiry", "CherryLouisse Noreen Tapiz, Hazel Faith Opeña, Jesus Emmanuel Saclot, Jehane Sadane", "Investigating_Social_Loafing", "Investigating_Social_Loafing.pdf", "The Pendulum"));
+        articleList.add(new journal1_model("Cao-nalyzer: An Android-Based Mold Detection in Cacao Beans Using Faster R-CNN Algorithm", "Benjamin Mahinay Jr, Jedy Matt Tabasco, Zhyr Narciso, Dandreb Inguito", "Cao-nalyzer", "Cao-nalyzer.pdf", "The Pendulum"));
 
         adapter = new journal1_adapter(articleList);
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(position -> {
-            Intent intent = new Intent(Gomanan.this, ImageViewerActivity.class);
+            Intent intent = new Intent(The_Pendulum.this, ImageViewerActivity.class);
             intent.putExtra("parentFolderName", articleList.get(position).getParentFolderName());
             intent.putExtra("folderName", articleList.get(position).getFolderName());
             startActivity(intent);

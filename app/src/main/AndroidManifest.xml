@@ -16,6 +16,15 @@
         android:theme="@style/Theme.Readkami_beta"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.Journals_to_Articles.Tinubdan"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Journals_to_Articles.La_Ricerca"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Journals_to_Articles.The_Pendulum"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Journals_to_Articles.Gomanan"
             android:exported="false" />
         <activity

@@ -23,7 +23,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Gomanan extends AppCompatActivity {
+public class La_Ricerca extends AppCompatActivity {
 
     private TextView descriptionTextView;
     private ImageView expandCollapseButton;
@@ -35,9 +35,9 @@ public class Gomanan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_journal_3rd);
+        setContentView(R.layout.activity_journal_5th);
 
-        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/Gomanan");
+        storageRef = FirebaseStorage.getInstance().getReferenceFromUrl("gs://readkami.appspot.com/La Ricerca");
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,17 +59,17 @@ public class Gomanan extends AppCompatActivity {
         });
 
         articleList = new ArrayList<>();
-        articleList.add(new journal1_model("Narratives of Domestic Violence against Women: A Multiple Case Study", "Mary Grace Aclon, Jayver Padulip, Ronald Taparan, Erick Baloran, Jenny Hernan, Erick Pajaron", "Narrative_of_Domestic", "Narrative_of_Domestic.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Tales of Homosexual Daughters: Insights and Lessons", "Jojie Bryan Gomintong, Angelica Patlunag, Marc Rowil Valdez, Erick Baloran, Jenny Hernan, Eric Pajaron", "Tales_of_Homosexual_Daughters", "Tales_of_Homosexual_Daughters.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Travails of Direct Sellers in Davao del Sur: A Phenomenological Inquiry", "Quiny Christine Deparine, Anna May Canoy, Joanna Rañoa, Erick Baloran, Jenny Hernan, Eric Pajaron", "Travails_of_Direct_Sellers", "Travails_of_Direct_Sellers.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Social Responsibility Practices and Customer Satisfaction among Cooperatives in Davao del Sur", "Cherry Jay Donque, May Anne Orbita, April Kaye Diez, Eric Paul Susada, Erick Baloran, Jenny Hernan, Eric Pajaron", "Social_Responsibility_Practices", "Social_Responsibility_Practices.pdf", "Gomanan"));
-        articleList.add(new journal1_model("Performance of the Local Government Units as a function of Internal Control Implementation", "Erika Garces, Elmer John Castro, Roldan Calisay, Erick Baloran, Jenny Hernan, Eric Pajaron", "Performance_of_the_Local_Government", "Performance_of_the_Local_Government.pdf", "Gomanan"));
+        articleList.add(new journal1_model("Bartending NCII Competency Quality Assessment: It’s Effectiveness In Passing The National Assessment", "Gypsy Mae Casurao, Ellakim Amay, Jayson Monday", "Bartending_NCII", "Bartending_NCII.pdf", "La Ricerca"));
+        articleList.add(new journal1_model("Davao Backpackers: A Profile and Motivational-based Segmentation", "Florence Kristina Jimenez, Joanna Victoria Abanilla, Arnee Caminade", "Davao_Backpackers", "Davao_Backpackers.pdf", "La Ricerca"));
+        articleList.add(new journal1_model("Evaluation of Green Practices Studies In Hospitality Industry", "Dindo Silud, Princess Christ Castelo, Donna Mae Lascuna, Rex Peterchill Rabia", "Evaluation_of_Green_Practices_Studies", "Evaluation_of_Green_Practices_Studies.pdf", "La Ricerca"));
+        articleList.add(new journal1_model("Workplace Social Support Among Tourism Professionals In Davao City", "Florence Kristina Jimenez, Sienna Pasaje, Gladys Ann Ablas", "Workplace_Social_Support", "Workplace_Social_Support.pdf", "La Ricerca"));
+        articleList.add(new journal1_model("Tourism For Visually Impaired", "Bon Jovi Cabreros, Renzo Lopez, Angelee Ramos , Gazette Saludar", "Tourism_for_Visually_Impaired", "Tourism_for_Visually_Impaired.pdf", "La Ricerca"));
 
         adapter = new journal1_adapter(articleList);
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(position -> {
-            Intent intent = new Intent(Gomanan.this, ImageViewerActivity.class);
+            Intent intent = new Intent(La_Ricerca.this, ImageViewerActivity.class);
             intent.putExtra("parentFolderName", articleList.get(position).getParentFolderName());
             intent.putExtra("folderName", articleList.get(position).getFolderName());
             startActivity(intent);
