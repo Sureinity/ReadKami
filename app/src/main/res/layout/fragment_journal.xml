@@ -16,20 +16,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Journal"
             android:layout_marginTop="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="16dp"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            />
+            android:textSize="25sp"
+            android:textStyle="bold"/>
 
+        <ImageButton
+            android:id="@+id/three_dot_nav"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:background="@drawable/baseline_more_vert_24"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"/>
     </LinearLayout>
+
 
 
     <ScrollView

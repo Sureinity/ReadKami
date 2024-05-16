@@ -1,21 +1,15 @@
 <resources>
     <string name="app_name">readkami beta</string>
-    <string name="Journal1">The Journal of Economic and Enterprise Studies (JEES) is dedicated to establishing a vibrant exchange platform for scholars, researchers, and practitioners engaged in the fields of economics and enterprise, particularly within the Southeast Asian context with a special emphasis on the Philippines. Our primary objective is to foster a dynamic, mutually beneficial dialogue between contributors and the wider community of academics, policymakers, and industry professionals who benefit from this research.
+    <string name="Journal1">
+         <b>About the Journal</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
 
---Core Focus--
-
-JEES is committed to disseminating cutting-edge research findings and advancing scientific knowledge in the realms of economics and enterprise. Our focus encompasses a range of critical areas:
-
-1. Economic Development and Policy: Delving into the strategies, outcomes, and implications of economic policies in Southeast Asia, with an emphasis on sustainable and inclusive growth.
-2. Entrepreneurship and Innovation: Exploring the vibrant world of startups, innovation strategies, and their impact on regional economies.
-3. International Trade and Finance: Analyzing the complexities of global trade, financial markets, and economic integration from a Southeast Asian perspective.
-4. Sustainable Business and Corporate Responsibility: Investigating the intersection of business practices with environmental sustainability and social responsibility.
-5. Agricultural Economics: Examining the sector\'s influence on regional economies, rural development, and policy-making.
-6. Behavioral Economics and Consumer Behavior: Unraveling the psychological aspects of economic decision-making in the digital era.
-7. Human Resource Management and Organizational Behavior: Studying the strategies for workforce development and organizational effectiveness in diverse cultural settings.
-8. Public Sector Economics and Policy Analysis: Assessing the impact of governmental actions in economic contexts.
-9. Urban and Regional Economics: Focusing on urbanization, regional development, and spatial economic dynamics.
-10. Financial Technology and Digital Economy: Investigating the transformative role of digital innovations in economics and business.</string>
+- Business, Economics, and Finance\n
+- Communication, Humanities, and Social Sciences\n
+- Education and Educational Management\n
+- Science, Technology, Engineering, and Mathematics (STEM)\n
+- Environmental Studies, Health Sciences, and Natural Sciences\n
+- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
+     </string>
 
     <string-array name="book_title">
         <item>Um Digos Research Journal</item>

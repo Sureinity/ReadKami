@@ -3,8 +3,7 @@
 
     <corners
         android:bottomRightRadius="30dp"
-        android:bottomLeftRadius="30dp"
-        />
+        android:bottomLeftRadius="30dp"/>
     <solid android:color="@color/maroon"/>
 
 </shape>
