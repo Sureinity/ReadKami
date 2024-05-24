@@ -1,7 +1,46 @@
 <resources>
     <string name="app_name">readkami beta</string>
     <string name="Journal1">
-         <b>About the Journal</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+    <b>About the Journal</b><br /><br />
+
+    </string>
+
+
+    <string name="Journal2">
+         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+
+- Business, Economics, and Finance\n
+- Communication, Humanities, and Social Sciences\n
+- Education and Educational Management\n
+- Science, Technology, Engineering, and Mathematics (STEM)\n
+- Environmental Studies, Health Sciences, and Natural Sciences\n
+- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
+     </string>
+
+    <string name="Journal3">
+         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+
+- Business, Economics, and Finance\n
+- Communication, Humanities, and Social Sciences\n
+- Education and Educational Management\n
+- Science, Technology, Engineering, and Mathematics (STEM)\n
+- Environmental Studies, Health Sciences, and Natural Sciences\n
+- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
+     </string>
+
+    <string name="Journal4">
+         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+
+- Business, Economics, and Finance\n
+- Communication, Humanities, and Social Sciences\n
+- Education and Educational Management\n
+- Science, Technology, Engineering, and Mathematics (STEM)\n
+- Environmental Studies, Health Sciences, and Natural Sciences\n
+- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
+     </string>
+
+    <string name="Journal5">
+         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
 
 - Business, Economics, and Finance\n
 - Communication, Humanities, and Social Sciences\n

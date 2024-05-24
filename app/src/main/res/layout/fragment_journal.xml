@@ -93,17 +93,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="115dp"
-                        android:text="UM Digos Research Journal"
+                        android:text="Journal of Economy and Enterprise Studies"
                         android:paddingTop="10dp"
                         android:textColor="@color/black"
-                        android:textSize="14sp"
+                        android:textSize="11sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
-                        android:textSize="10sp"
+                        android:textSize="9sp"
                         android:text="About"
                         android:textStyle="bold"
                         android:paddingTop="35dp"
@@ -115,8 +115,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:textSize="8sp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet."
-                        android:paddingTop="52dp" />
+                        android:text="The Journal of Economic and Enterprise Studies (JEES) is a platform for scholars, researchers, and practitioners in Southeast Asian economics and enterprise, with a particular focus on the Philippines."
+                        android:paddingTop="52dp"
+                        android:justificationMode="inter_word"
+                        android:textStyle="italic"/>
 
 
                 </RelativeLayout>
@@ -166,7 +168,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
-                        android:textSize="10sp"
+                        android:textSize="9sp"
                         android:text="About"
                         android:textStyle="bold"
                         android:paddingTop="35dp"
@@ -178,8 +180,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:textSize="8sp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet."
-                        android:paddingTop="52dp" />
+                        android:text="This scholarly compendium is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination."
+                        android:paddingTop="52dp"
+                        android:justificationMode="inter_word"
+                        android:textStyle="italic"/>
 
 
                 </RelativeLayout>
@@ -219,7 +223,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="115dp"
-                        android:text="UM Digos Research Journal"
+                        android:text="Gomanan"
                         android:paddingTop="10dp"
                         android:textColor="@color/black"
                         android:textSize="14sp"
@@ -229,7 +233,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
-                        android:textSize="10sp"
+                        android:textSize="9sp"
                         android:text="About"
                         android:textStyle="bold"
                         android:paddingTop="35dp"
@@ -241,8 +245,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:textSize="8sp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet."
-                        android:paddingTop="52dp" />
+                        android:text="GOMANAN (ISSN 3028-0338) is a journal of researches, current issues, and trends in social sciences, business, law enforcement, and human welfare. "
+                        android:paddingTop="52dp"
+                        android:justificationMode="inter_word"
+                        android:textStyle="italic"/>
 
 
                 </RelativeLayout>
@@ -282,7 +288,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="115dp"
-                        android:text="UM Digos Research Journal"
+                        android:text="The Pendulum"
                         android:paddingTop="10dp"
                         android:textColor="@color/black"
                         android:textSize="14sp"
@@ -292,7 +298,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
-                        android:textSize="10sp"
+                        android:textSize="9sp"
                         android:text="About"
                         android:textStyle="bold"
                         android:paddingTop="35dp"
@@ -304,8 +310,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:textSize="8sp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet."
-                        android:paddingTop="52dp" />
+                        android:text="The official undergraduate research journal of UM Tagum College, Tagum City, Davao del Norte, Philippines. "
+                        android:paddingTop="52dp"
+                        android:justificationMode="inter_word"
+                        android:textStyle="italic"/>
 
 
                 </RelativeLayout>
@@ -345,7 +353,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="115dp"
-                        android:text="UM Digos Research Journal"
+                        android:text="La Ricerca"
                         android:paddingTop="10dp"
                         android:textColor="@color/black"
                         android:textSize="14sp"
@@ -355,7 +363,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
-                        android:textSize="10sp"
+                        android:textSize="9sp"
                         android:text="About"
                         android:textStyle="bold"
                         android:paddingTop="35dp"
@@ -367,8 +375,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:textSize="8sp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet."
-                        android:paddingTop="52dp" />
+                        android:text="This scientific compendium provides a platform for staff, researchers, faculty, and students to publish their work and contribute to the generation and dissemination of knowledge."
+                        android:paddingTop="52dp"
+                        android:justificationMode="inter_word"
+                        android:textStyle="italic"/>
 
 
                 </RelativeLayout>
@@ -402,13 +412,13 @@
                         android:layout_alignParentLeft="true"
                         android:layout_marginLeft="-15dp"
                         android:padding="4dp"
-                        android:src="@drawable/journal1" />
+                        android:src="@drawable/journal6" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="115dp"
-                        android:text="UM Digos Research Journal"
+                        android:text="Tinubdan"
                         android:paddingTop="10dp"
                         android:textColor="@color/black"
                         android:textSize="14sp"
@@ -417,12 +427,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
                         android:paddingLeft="130dp"
-                        android:textSize="10sp"
-                        android:text="About"
-                        android:textStyle="bold"
                         android:paddingTop="35dp"
-                        />
+                        android:text="About"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -430,8 +440,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:textSize="8sp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet."
-                        android:paddingTop="52dp" />
+                        android:text="Tinubdan, the official research journal of UM Panabo College, Panabo City, Davao de Norte, Philippines. "
+                        android:paddingTop="52dp"
+                        android:justificationMode="inter_word"
+                        android:textStyle="italic"/>
 
 
                 </RelativeLayout>
