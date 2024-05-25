@@ -4,6 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="maroon">#AF2532</color>
     <color name="statusBarColor">#FF000000</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="blue">#0000FF</color>
+
 
 
 </resources>
