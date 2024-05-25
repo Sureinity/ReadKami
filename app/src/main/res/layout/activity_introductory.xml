@@ -11,20 +11,31 @@
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@id/logoTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Readkami"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:letterSpacing="0.2"/>
     <TextView
         android:id="@+id/logoTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="      Welcome to ReadKami. Inspired by the website ieesjournals.com, our app provides seamless access to a comprehensive compilation of research papers and theses across various academic disciplines. We are committed to fostering academic excellence by providing a platform where knowledge is accessible and convenient. Join us in our mission to support educational advancement and research dissemination."
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textColor="@android:color/black"
         android:justificationMode="inter_word"
         android:lineSpacingExtra="8dp"
@@ -52,7 +63,9 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
