@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.TextView;
 
 import com.example.readkami_beta.Fragments.JournalFragment;
@@ -26,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.statusBarColor));
         } // <-- Close the if statement here
-
 
 
         // Initially load the JournalFragment
@@ -43,4 +45,12 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu){
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.new_menu, menu);
+//        return true;
+//
+//    }
 }

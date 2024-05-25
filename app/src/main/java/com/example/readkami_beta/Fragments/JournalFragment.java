@@ -6,10 +6,19 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import android.view.MenuInflater;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.readkami_beta.Activities.Journals_to_Articles.Gomanan;
+import com.example.readkami_beta.Activities.Journals_to_Articles.Journal_of_Economy_and_Enterprise;
+import com.example.readkami_beta.Activities.Journals_to_Articles.La_Ricerca;
+import com.example.readkami_beta.Activities.Journals_to_Articles.The_Pendulum;
+import com.example.readkami_beta.Activities.Journals_to_Articles.Tinubdan;
+import com.example.readkami_beta.Activities.Journals_to_Articles.UM_Digos_Research_Journal;
 import com.example.readkami_beta.R;
 
 /**
@@ -76,46 +85,47 @@ public class JournalFragment extends Fragment {
         journal1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.Journal_of_Economy_and_Enterprise.class);
+                Intent intent = new Intent(getActivity(), Journal_of_Economy_and_Enterprise.class);
                 startActivity(intent);
             }
         });
         journal2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.UM_Digos_Research_Journal.class);
+                Intent intent = new Intent(getActivity(), UM_Digos_Research_Journal.class);
                 startActivity(intent);
             }
         });
         journal3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.Gomanan.class);
+                Intent intent = new Intent(getActivity(), Gomanan.class);
                 startActivity(intent);
             }
         });
         journal4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.The_Pendulum.class);
+                Intent intent = new Intent(getActivity(), The_Pendulum.class);
                 startActivity(intent);
             }
         });
         journal5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.La_Ricerca.class);
+                Intent intent = new Intent(getActivity(), La_Ricerca.class);
                 startActivity(intent);
             }
         });
         journal6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), com.example.readkami_beta.Activities.Journals_to_Articles.Tinubdan.class);
+                Intent intent = new Intent(getActivity(), Tinubdan.class);
                 startActivity(intent);
             }
         });
 
         return view;
     }
+
 }
