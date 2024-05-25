@@ -51,6 +51,8 @@
             android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.02"
             app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <!-- Add a button to expand/collapse description -->

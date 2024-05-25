@@ -1,54 +1,81 @@
 <resources>
     <string name="app_name">Readkami</string>
     <string name="Journal1">
-    <b>About the Journal</b><br /><br />
+    <b>About the Journal</b> \n\n
+    The Journal of Economic and Enterprise Studies (JEES) is dedicated to establishing a vibrant exchange platform for scholars, researchers, and practitioners engaged in the fields of economics and enterprise, particularly within the Southeast Asian context with a special emphasis on the Philippines. Our primary objective is to foster a dynamic, mutually beneficial dialogue between contributors and the wider community of academics, policymakers, and industry professionals who benefit from this research.\n\n
+        <b>Core Focus</b>\n\n
+    JEES is committed to disseminating cutting-edge research findings and advancing scientific knowledge in the realms of economics and enterprise. Our focus encompasses a range of critical areas:\n\n
+    1. <b>Economic Development and Policy:</b> Delving into the strategies, outcomes, and implications of economic policies in Southeast Asia, with an emphasis on sustainable and inclusive growth.\n\n
+    2. <b>Entrepreneurship and Innovation:</b> Exploring the vibrant world of startups, innovation strategies, and their impact on regional economies.\n\n
+    3. <b>International Trade and Finance:</b> Analyzing the complexities of global trade, financial markets, and economic integration from a Southeast Asian perspective.\n\n
+    4. <b>Sustainable Business and Corporate Responsibility:</b> the intersection of business practices with environmental sustainability and social responsibility.\n\n
+    5. <b>Agricultural Economics:</b> Examining the sectors influence on regional economies, rural development, and policy-making.\n\n
+    6. <b>Behavioral Economics and Consumer Behavior:</b> Unraveling the psychological aspects of economic decision-making in the digital era.\n\n
+    7. <b>Human Resource Management and Organizational Behavior:</b> Studying the strategies for workforce development and organizational effectiveness in diverse cultural settings.\n\n
+    8. <b>Public Sector Economics and Policy Analysis:</b> Assessing the impact of governmental actions in economic contexts.\n\n
+    9. <b>Urban and Regional Economics:</b> Focusing on urbanization, regional development, and spatial economic dynamics.\n\n
+    10. <b>Financial Technology and Digital Economy:</b> Investigating the transformative role of digital innovations in economics and business.\n\n
+</string>
 
-    </string>
+
 
 
     <string name="Journal2">
-         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+    <b>About the Journal</b> \n\n The UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\n UMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+    - Business, Economics, and Finance\n
+    - Communication, Humanities, and Social Sciences\n
+    - Education and Educational Management\n
+    - Science, Technology, Engineering, and Mathematics (STEM)\n
+    - Environmental Studies, Health Sciences, and Natural Sciences\n
+    - Interdisciplinary Studies\n\n\n Each article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
+</string>
 
-- Business, Economics, and Finance\n
-- Communication, Humanities, and Social Sciences\n
-- Education and Educational Management\n
-- Science, Technology, Engineering, and Mathematics (STEM)\n
-- Environmental Studies, Health Sciences, and Natural Sciences\n
-- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
-     </string>
 
     <string name="Journal3">
-         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
-
-- Business, Economics, and Finance\n
-- Communication, Humanities, and Social Sciences\n
-- Education and Educational Management\n
-- Science, Technology, Engineering, and Mathematics (STEM)\n
-- Environmental Studies, Health Sciences, and Natural Sciences\n
-- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
-     </string>
+    <b>About the Journal</b> \n\n
+    GOMANAN (ISSN 3028-0338) is a journal of researches, current issues, and trends in social sciences, business, law enforcement, and human welfare. Gomanan is a Bagobo-Tagabawa term of a forge, an essential part of the tribes culture and traditions.From this forge, blacksmiths make their farm tools and weapons.\n\n
+        With the concept of Gomanan, UM Bansalan College, as a higher learning institution, is not only committed to teaching (instruction) but also to <b>forge</b> knowledge (research) and utilize the outputs of the intellect to support the larger community (extension).\n\n
+    Gomanan as a research journal serves as a forge that binds the generated knowledge and stories of the lives of the local members of the community.
+</string>
 
     <string name="Journal4">
-         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+         <b>About the Journal</b> \n\n
+    The official undergraduate research journal of UM Tagum College, Tagum City, Davao del Norte, Philippines. ISSN 2467-6527 (print) | ISSN 3028-0362 (online) \n\n
+    <b>Core Focus</b>\n\n
+    "<i>The Pendulum,</i>" UM Tagum College's premier multidisciplinary research journal, stands at the forefront of academic excellence, bridging diverse fields of study to foster a rich dialogue across disciplines. Our journal is dedicated to publishing high-quality, peer-reviewed articles that contribute significant knowledge and understanding to the global academic community. With a broad scope that encompasses the full spectrum of scholarly research, "<i>The Pendulum</i>" seeks to be a nexus for scientists, researchers, and scholars, facilitating collaborations that push the boundaries of knowledge and innovation.\n\n
+    The core focus of "<i>The Pendulum</i>" is to provide a platform for the dissemination of groundbreaking research that challenges conventional boundaries and encourages a multidisciplinary approach. We are committed to featuring works that not only advance specific fields of study but also contribute to solving complex global issues through interdisciplinary synergy. Our publication spans across various domains including, but not limited to, science and technology, health sciences, social sciences, education, business, and humanities, reflecting the dynamic landscape of contemporary research.
+</string>
 
-- Business, Economics, and Finance\n
-- Communication, Humanities, and Social Sciences\n
-- Education and Educational Management\n
-- Science, Technology, Engineering, and Mathematics (STEM)\n
-- Environmental Studies, Health Sciences, and Natural Sciences\n
-- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
-     </string>
 
-    <string name="Journal5">
-         <b>Hello</b> \n\nThe UM DIGOS RESEARCH JOURNAL is a yearly refereed journal of UM Digos College published by the UM Institute of Economy and Enterprise Studies (UM-IEES). This scholarly compendium (print ISSN 2467-6489, e-ISSN 3028-0095) is designed to be an avenue for faculty, students, researchers, and staff to publish their work and contribute to knowledge generation and dissemination. \n\nUMDRJ deals with topics from varied disciplines and thus invites the submission of exceptional research in various academic fields, including but not limited to: \n\n
+    <string name="Journal5"><b>About the Journal</b>\n\n
+    <b>Mabuhay ug madayaw!</b>\n\n
+    The University of Mindanao College of Hospitality Education publishes La Ricerca, an annual refereed journal, through the UM Institute of Economy and Enterprise Studies (UM-IEES). This scientific compendium (ISSN 2467-656X | e-ISSN 3028-0664) provides a platform for staff, researchers, faculty, and students to publish their work and contribute to the generation and dissemination of knowledge.\n\n
+    Since La Ricerca covers a wide range of topics, it welcomes the submission of exceptional research in various academic domains, including but not limited to:\n\n
+    - Nature-based Tourism\n
+    - Medical Tourism\n
+    - Sun and Beach Tourism\n
+    - Cultural Tourism\n
+    - Leisure Tourism\n
+    - Sports Tourism\n
+    - Entertainment Tourism\n
+    - Dark Tourism\n
+    - Health and Wellness Tourism\n
+    - Meetings, Incentive, Conference, Exhibition\n
+    - Gastro-Tourism\n
+    - Agritourism\n
+    - Sustainable Development Goals\n\n
+    To guarantee the highest possible standard, every article published in this journal passed a thorough double-blind peer review process. The La Ricerca editorial board, reviewers, and employees are accomplished academics well-suited to manage and uphold the journal caliber.
+</string>
 
-- Business, Economics, and Finance\n
-- Communication, Humanities, and Social Sciences\n
-- Education and Educational Management\n
-- Science, Technology, Engineering, and Mathematics (STEM)\n
-- Environmental Studies, Health Sciences, and Natural Sciences\n
-- Interdisciplinary Studies\n\n\nEach article published in this journal underwent a rigorous process of double-blind peer review system to assure high quality. The editorial board, reviewers, and staff of the UMDRJ are scholars highly capable of handling and maintaining the quality of this journal.
-     </string>
+    <string name="Journal6">
+    <b>About the Journal</b>\n\n
+    Tinubdan, the official research journal of UM Panabo College, Panabo City, Davao de Norte, Philippines.\n\n
+    <b>Core Focus</b>\n\n
+    "Tinubdan," a term that signifies "source" or "origin," embodies the spirit and mission of UM Panabo Colleges multidisciplinary research journal (print ISSN 2467-6578 | e-ISSN 3028-0354). As a beacon of scholarly inquiry and intellectual discourse, "Tinubdan" is dedicated to publishing rigorous, peer-reviewed research that spans a wide array of disciplines. Our journal is a crucible for innovative ideas, theories, and methodologies that challenge conventional wisdom and advance the frontiers of knowledge.\n\n
+    The core focus of "Tinubdan" is to serve as a vibrant forum for the exchange of scientific discoveries, insights into human society and culture, technological advancements, and explorations of environmental dynamics. We welcome contributions from fields as diverse as the natural sciences, social sciences, humanities, health sciences, engineering, and business. By fostering a multidisciplinary approach, "Tinubdan" aims to catalyze research that transcends the limitations of singular academic perspectives, encouraging works that demonstrate the interconnectedness of knowledge and its application to global challenges.
+</string>
+
+
 
     <string-array name="book_title">
         <item>Um Digos Research Journal</item>

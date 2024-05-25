@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -101,6 +102,10 @@ public class JournalFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Gomanan.class);
                 startActivity(intent);
+
+                String journalContent = getString(R.string.Journal3);
+                Log.d("JournalContent", journalContent);
+
             }
         });
         journal4.setOnClickListener(new View.OnClickListener() {
