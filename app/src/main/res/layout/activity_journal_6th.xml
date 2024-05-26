@@ -45,7 +45,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/Journal1"
+            android:text="@string/Journal6"
             android:maxLines="2"
             android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"

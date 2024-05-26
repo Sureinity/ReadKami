@@ -93,6 +93,7 @@
                         android:text="Journal of Economy and Enterprise Studies"
                         android:paddingTop="10dp"
                         android:textColor="@color/black"
+                        android:gravity="center"
                         android:textSize="11sp"
                         android:textStyle="bold" />
 
